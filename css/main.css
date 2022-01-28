@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+
+:root {
+    --bg: #2D3645;
+    --text: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    letter-spacing: .1rem;
+    text-align: center;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.897) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.input-box {
+    margin-top: 1rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-box {
+    justify-content: space-around;
+}
+
+input {
+    box-shadow: rgba(0, 0, 0, 0.637) 0px 3px 8px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--text);
+    letter-spacing: .1rem;
+    text-align: center;
+    padding: .7rem;
+    outline: none;
+    border: none;
+    width: 240px;
+}
+
+button {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background: linear-gradient(to left, #333f57f6 40%, #252d3ff6 100%);
+    letter-spacing: .1rem;
+    border-radius: 5px;
+    color: var(--text);
+    cursor: pointer;
+    padding: .8rem;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    box-shadow: rgb(88, 100, 116) 0px 20px 30px -10px;
+}
+
+#generated-captcha {
+    text-decoration: line-through;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text);
+}
